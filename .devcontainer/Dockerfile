@@ -1,4 +1,6 @@
-FROM "darknessoup/ros-noetic-20.04:20240703_1"
+ARG BASE_IMAGE="darknessoup/ros-noetic-20.04:20250107_1"
+
+FROM ${BASE_IMAGE}
 RUN apt-get update
 
 ARG USERNAME
